@@ -1,5 +1,52 @@
 // @import "./page/page.scss";
 
+@mixin container() {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto; 
+}
+
+// *-----------------header-----------------------
+
+.header {
+ 
+  
+ 
+}
+  .header__one {
+    @include container();
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+  }
+    .header__logo-a {
+     padding-top: 15px;
+    }
+      .header__logo-img {
+
+      }
+    .header__menu {
+      
+    }
+  .menu__list {
+    display: flex
+  }
+    .menu__list-item + .menu__list-item {
+      margin-left: 32px;
+    }
+      .menu__list-link {
+        padding: 0 9px 9px;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: epperscase;
+        color: #373A39;
+        font-family: 'Raleway',sans-serf;
+        latter-spacing: 0.6px;
+
+        &:hover{
+          border-bottom: 1px solid #FCBB08;
+        }
+      }
 
 
 
