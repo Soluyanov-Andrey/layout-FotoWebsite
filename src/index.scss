@@ -44,7 +44,7 @@
         latter-spacing: 0.6px;
 
         &:hover{
-          border-bottom: 1px solid #FCBB08;
+          border-bottom: 1px solid #4e7f9c;
         }
       }
 
@@ -92,16 +92,43 @@
 //*-----about----->
 .about {
         background-color: #f6f8fa;
-        padding: 150px 0 160px;
+        padding: 150px 0 144px;
       }
   .about_one {
+    @include container();
     display: flex;
     justify-content: space-between;
   }
     .about__header {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 75px;
+
+      padding-bottom: 18px;
+      align-self: flex-start;
+      position:relative;
+
+      &:after{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 4px;
+        background-color: #4e7f9c;
+        bottom: 0;
+        left: 0;
+      }
     }
+   
       .about__text p{
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
         max-width: 770px;
+        margin-bottom: 16px;
       }
 
    
