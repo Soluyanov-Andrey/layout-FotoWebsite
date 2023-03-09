@@ -6,122 +6,155 @@
   margin: 0 auto; 
 }
 
+@mixin header() {
+   font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 75px;
+  padding-bottom: 18px;
+  
+  position:relative;
+
+&::after{
+content: "";
+position: absolute;
+width: 60px;
+height: 4px;
+background-color: #4e7f9c;
+bottom: 0;
+left: 0;
+
+
+}
+}
+
+
+.da{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 75px;
+  padding-bottom: 18px;
+  
+  position:relative;
+
+&::after{
+content: "";
+position: absolute;
+width: 60px;
+height: 4px;
+background-color: #4e7f9c;
+bottom: 0;
+left: 0;
+
+
+}
+}
+
 //*-----header----->
 
-.header {
- 
-  
+.a {
  
 }
-  .header__one {
-    @include container();
+
+  .aa { @include container();
     display: flex;
     justify-content:space-between;
     align-items: center;
-  }
-    .header__logo-a {
-    //  padding-top: 15px;
-    }
-      .header__logo-img {
 
+  }
+
+    .aaa {
+    }
+
+      .aaa-a {
       }
-    .header__menu {
+
+    .aab {
       
     }
-  .menu__list {
-    display: flex
-  }
-    .menu__list-item + .menu__list-item {
+
+    .aab-a {
+      display: flex
+    }
+
+    .aab-aa + .aab-aa {
       margin-left: 32px;
     }
-      .menu__list-link {
-        padding: 0 9px 9px;
-        font-size: 12px;
-        line-height: 14px;
-        text-transform: epperscase;
-        color: #373A39;
-        font-family: 'Raleway',sans-serf;
-        latter-spacing: 0.6px;
 
-        &:hover{
-          border-bottom: 1px solid #4e7f9c;
-        }
+      .aab-aaa {
+          padding: 0 9px 9px;
+          font-size: 12px;
+          line-height: 14px;
+          text-transform: epperscase;
+          color: #373A39;
+          font-family: 'Raleway',sans-serf;
+          latter-spacing: 0.6px;
+
+          &:hover{
+            border-bottom: 1px solid #4e7f9c;
+          }
       }
 
 //*-----banner----->
 
-
-.banner {
-    
-    background-image: url('images/htader.jpg');
+.b {
+   background-image: url('images/htader.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     min-height: calc(100vh - 94px);
     font-family:'Montserrat',sans-serf;
 }
-    .banner__one {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      min-height: calc(100vh - 94px);
-    }
-      .banner__title {
-        font-weight: 500;
-        font-size: 72px;
-        line-height: 88px;
-        color: rgb(235, 244, 244);
-        margin-top: auto;
-        margin-bottom: 19px;
-        text-shadow:1px 0 0 rgb(7, 7, 7),0 1px 0 rgb(17, 15, 15),-1px 0 0 rgb(12, 11, 11),0 -1px 0 rgb(226, 208, 208);
-      }
-      .banner__subtitle {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 2.74286px;
-        color: #FCBB08;
-        text-shadow:1px 0 0 rgb(238, 230, 230),0 1px 0 rgb(17, 15, 15),-1px 0 0 rgb(12, 11, 11),0 -1px 0 rgb(226, 208, 208);
-        margin-bottom: auto;
-      }
-      .banner__icon {
-        margin-bottom: 62px;
-      }
+.ba {    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 94px);
+
+}
+.baa {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 88px;
+  color: rgb(235, 244, 244);
+  margin-top: auto;
+  margin-bottom: 19px;
+  text-shadow:1px 0 0 rgb(7, 7, 7),0 1px 0 rgb(17, 15, 15),-1px 0 0 rgb(12, 11, 11),0 -1px 0 rgb(226, 208, 208);
+}
+.bab {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2.74286px;
+  color: #FCBB08;
+  text-shadow:1px 0 0 rgb(238, 230, 230),0 1px 0 rgb(17, 15, 15),-1px 0 0 rgb(12, 11, 11),0 -1px 0 rgb(226, 208, 208);
+  margin-bottom: auto;
+}
+.bac {
+
+}
+
 
 //*-----about----->
-.about {
+.c {
         background-color: #f6f8fa;
         padding: 150px 0 144px;
       }
-  .about_one {
+  .ca {
     @include container();
     display: flex;
     justify-content: space-between;
   }
-    .about__header {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 75px;
-
-      padding-bottom: 18px;
+    .caa {
       align-self: flex-start;
-      position:relative;
-
-      &:after{
-        content: "";
-        position: absolute;
-        width: 60px;
-        height: 4px;
-        background-color: #4e7f9c;
-        bottom: 0;
-        left: 0;
-      }
+      @include  header();
     }
    
-      .about__text p{
+      .cab p{
         font-family: 'SF Pro Display';
         font-style: normal;
         font-weight: 300;
@@ -131,5 +164,119 @@
         margin-bottom: 16px;
       }
 
-   
+//*---expertise----->
+
+.da-1 {
+  @include container();
+  display: flex;
+  flex-direction: column;
+  
+}
+.da{
+  @include  header();
+}
+
+.db {
+  
+  display: flex;
+  padding: 70px 0 110px;
+}
+.dba {
+  margin-top: 8px;
+  width: 370px;
+  margin-right: 30px;
+  flex:none;
+
+}
+.dba-a {
+
+  padding: 2px 0 28px;
+  border-top: 2px solid #1d1d1d;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  position: relative;
+}
+
+.dba-a span{
+
+ display:block;
+ position: absolute;
+ right: 0;
+ top:0;
+ margin-right: 7px;
+
+}
+
+.dba-a span::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color:#b09999;
+  right: -7px;
+  top: -2px;
+  width: 100%;
+}
+.dba-b {
+}
+.dba-c {
+}
+.dbb{
+  
+}
+.dbb p{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.dc {
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.dca {
+  width: 370px;
+  padding-left: 85px;
+  position: relative;
+}
+
+.dca::before {
+ content: "";
+ position: absolute;
+ top:0;
+ left:0;
+ width: 50px;
+ height: 50px;
+}
+.dca-a {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+.dca--DESIGN::before{
+background-image: url('images/vector.png');
+}
+.dca--DEVELOPMENT::before{
+  background-image: url('images/speaker.png');
+}
+.dca--MARKETING::before{
+  background-image: url('images/monitor.png');
+}
+
+.dca-ab {
+  font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+}
+.dcab {
+} 
       
