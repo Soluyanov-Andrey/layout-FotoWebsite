@@ -30,6 +30,8 @@ left: 0;
 }
 
 
+
+
 .da{
   font-family: 'Montserrat';
   font-style: normal;
@@ -113,7 +115,7 @@ left: 0;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: calc(100vh - 94px);
+  min-height: calc(100vh - 150px);
 
 }
 .baa {
@@ -271,7 +273,7 @@ background-image: url('images/vector.png');
 }
 
 .dca-ab {
-  font-family: 'SF Pro Display';
+font-family: 'SF Pro Display';
 font-style: normal;
 font-weight: 300;
 font-size: 14px;
@@ -279,4 +281,49 @@ line-height: 24px;
 }
 .dcab {
 } 
-      
+//*---magic----->
+
+.e{
+  
+  
+  max-width: 1190px;
+   padding: 100px 10px;
+  margin: 0 auto; 
+  
+}
+
+.ea{
+   display:inline-flex;
+   
+}
+
+.eaa{
+ 
+  background-color: aqua;
+  width: 50%;
+  height: 750px;
+}
+.eab{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.eaa img{
+  
+   width: 100%;
+   height: 100%;
+   object-fit:cover;
+   // // height: calc(50vw + 200px);
+   // height:auto;
+}
+.eab-a{
+   @include header();
+}
+.eab p{
+   padding-top: 10px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+}
