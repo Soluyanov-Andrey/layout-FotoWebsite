@@ -7,13 +7,12 @@
 }
 
 @mixin header() {
-   font-family: 'Montserrat';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 75px;
+  line-height: 50px;
   padding-bottom: 18px;
-  
   position:relative;
 
 &::after{
@@ -168,7 +167,7 @@ left: 0;
 
 //*---expertise----->
 
-.da-1 {
+.da1 {
   @include container();
   display: flex;
   flex-direction: column;
@@ -306,7 +305,7 @@ line-height: 24px;
 .eab{
     width: 50%;
     padding-left: 50px;
-    padding-top: 100px;
+    padding-top: 0px;
 }
 .eaa img{
   
