@@ -114,7 +114,7 @@ left: 0;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: calc(100vh - 150px);
+  // min-height: calc(100vh - 150px);
 
 }
 .baa {
@@ -125,6 +125,7 @@ left: 0;
   margin-top: auto;
   margin-bottom: 19px;
   text-shadow:1px 0 0 rgb(7, 7, 7),0 1px 0 rgb(17, 15, 15),-1px 0 0 rgb(12, 11, 11),0 -1px 0 rgb(226, 208, 208);
+  margin-top: 530px;
 }
 .bab {
   font-weight: bold;
@@ -133,10 +134,11 @@ left: 0;
   letter-spacing: 2.74286px;
   color: #FCBB08;
   text-shadow:1px 0 0 rgb(238, 230, 230),0 1px 0 rgb(17, 15, 15),-1px 0 0 rgb(12, 11, 11),0 -1px 0 rgb(226, 208, 208);
-  margin-bottom: auto;
+  margin-top: 1px;
+
 }
 .bac {
-
+  margin-top: 200px;
 }
 
 
@@ -262,13 +264,14 @@ left: 0;
   padding-bottom: 15px;
 }
 .dca--DESIGN::before{
-background-image: url('images/vector.png');
+
+background-image: url('images/portreit.svg');
 }
 .dca--DEVELOPMENT::before{
-  background-image: url('images/speaker.png');
+  background-image: url('images/scenery.svg');
 }
 .dca--MARKETING::before{
-  background-image: url('images/monitor.png');
+  background-image: url('images/stillife.svg');
 }
 
 .dca-ab {
